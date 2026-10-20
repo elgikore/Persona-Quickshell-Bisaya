@@ -168,16 +168,16 @@ WlrLayershell {
             fragmentShader: Qt.resolvedUrl("../Assets/shaders/motion/motion.frag.qsb")
         }
 
-        CavaVisualizer {
-            id: s1_cava
-            anchors {
-                left: parent.left
-                right: parent.right
-                top: parent.top
-                topMargin: 0
-            }
-            height: 555
-        }
+        // CavaVisualizer {
+        //     id: s1_cava
+        //     anchors {
+        //         left: parent.left
+        //         right: parent.right
+        //         top: parent.top
+        //         topMargin: 0
+        //     }
+        //     height: 555
+        // }
 
         Image {
             id: s1_fg

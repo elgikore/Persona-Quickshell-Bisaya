@@ -15,14 +15,14 @@ Singleton {
 
     // Convenience props (drop-in replacements for old networkName / networkStrength / wifiStatus)
     readonly property bool connected: active !== null
-    readonly property string networkName: active?.ssid ?? "Not Connected"
+    readonly property string networkName: active?.ssid ?? Tighubad.pulong["Not Connected"]
     readonly property int networkStrength: active?.strength ?? 0
     readonly property string wifiStatus: {
         if (!wifiEnabled)
-            return "disabled";
+            return Tighubad.pulong["disabled"];
         if (active)
-            return "connected";
-        return "disconnected";
+            return Tighubad.pulong["connected"];
+        return Tighubad.pulong["disconnected"];
     }
 
     // ── Public API ────────────────────────────────────────────────
