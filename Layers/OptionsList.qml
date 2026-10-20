@@ -2,6 +2,7 @@ import QtQuick
 import Quickshell
 import Quickshell.Io
 import qs.Data as Dat
+import qs.i18n
 
 Item {
     id: revealRoot
@@ -22,18 +23,18 @@ Item {
     }
     readonly property var revealContent: [
         {
-            upper: ["Filter to reduce Bluelight"],
-            lower: "blue light filter",
+            upper: [Tighubad.pulong["Filter to reduce Bluelight"]],
+            lower: Tighubad.pulong["blue light filter"],
             portrait: Qt.resolvedUrl("../Assets/components/mainm.jpeg")
         },
         {
-            upper: ["Black and white only"],
-            lower: "grey scale filter",
+            upper: [Tighubad.pulong["Black and white only"]],
+            lower: Tighubad.pulong["grey scale filter"],
             portrait: Qt.resolvedUrl("../Assets/components/mainm2.jpeg")
         },
         {
-            upper: ["Invert all the colors cuz why not"],
-            lower: "inversion filter",
+            upper: [Tighubad.pulong["Invert all the colors cuz why not"]],
+            lower: Tighubad.pulong["inversion filter"],
             portrait: Qt.resolvedUrl("../Assets/components/mainf.jpeg")
         },
     ]
@@ -223,7 +224,11 @@ Item {
             spacing: 12
 
             Repeater {
-                model: ["Bluelight", "Greyscale", "Inversion"]
+                model: [
+                    Tighubad.pulong["Bluelight"], 
+                    Tighubad.pulong["Greyscale"], 
+                    Tighubad.pulong["Inversion"]
+                ]
                 delegate: Item {
                     required property string modelData
                     required property int index
@@ -256,7 +261,7 @@ Item {
                         Text {
                             anchors.centerIn: parent
                             text: parent.parent.modelData
-                            font.pixelSize: 14
+                            font.pixelSize: 18
                             color: parent.parent.index === revealRoot.localTab ? "#111111" : "#66ffffff"
                             Behavior on color {
                                 ColorAnimation {
@@ -296,7 +301,7 @@ Item {
                         required property string modelData
                         text: modelData
                         font.family: montserrat.name
-                        font.pixelSize: 20
+                        font.pixelSize: 25
                         color: "white"
                         horizontalAlignment: Text.AlignHCenter
                         width: upperBar.width
@@ -333,7 +338,7 @@ Item {
             Row {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: parent.left
-                anchors.leftMargin: 22
+                anchors.leftMargin: 25
                 anchors.right: parent.right
                 anchors.rightMargin: 28
                 spacing: 12
@@ -350,7 +355,7 @@ Item {
                 Text {
                     text: revealRoot.activeShaderIndex === revealRoot.localTab ? "● ON" : "○ OFF"
                     font.family: bebasNeue.name
-                    font.pixelSize: 16
+                    font.pixelSize: 18
                     color: revealRoot.activeShaderIndex === revealRoot.localTab ? "#4a8fff" : "#66ffffff"
                     Behavior on color {
                         ColorAnimation {

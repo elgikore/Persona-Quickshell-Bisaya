@@ -7,6 +7,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 import QtQuick.Effects
+import qs.i18n
 
 Scope {
     id: capsuleScope
@@ -83,7 +84,7 @@ Scope {
                             height: songname.implicitHeight - 20
                             Wid.Marquee {
                                 id: songname
-                                text: capsuleScope.mpris ? (capsuleScope.mpris.trackTitle || "No title") : "No Media"
+                                text: capsuleScope.mpris ? (capsuleScope.mpris.trackTitle || Tighubad.pulong["No title"]) : Tighubad.pulong["No Media"]
                                 maxWidth: 100
                                 font: "Linux Biolinum"
                                 size: 16
@@ -111,7 +112,7 @@ Scope {
                                 Text {
                                     id: prevIcon
                                     anchors.centerIn: parent
-                                    text: "skip_previous"
+                                    text: Tighubad.pulong["skip_previous"]
                                     font.family: "Material Symbols Rounded"
                                     font.pixelSize: 30
                                     color: prevMouse.containsMouse ? Dat.Colors.color3 : Dat.Colors.color15
@@ -201,7 +202,7 @@ Scope {
                                 Text {
                                     id: nextIcon
                                     anchors.centerIn: parent
-                                    text: "skip_next"
+                                    text: Tighubad.pulong["skip_next"]
                                     font.family: "Material Symbols Rounded"
                                     font.pixelSize: 30
                                     color: nextMouse.containsMouse ? Dat.Colors.color3 : Dat.Colors.color15

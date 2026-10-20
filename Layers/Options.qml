@@ -3,6 +3,7 @@ import QtMultimedia
 import Quickshell
 import Quickshell.Wayland
 import qs.Widgets as Wid
+import qs.i18n
 
 Scope {
     id: root
@@ -12,18 +13,18 @@ Scope {
 
     readonly property var barData: [
         {
-            role: "LEADER",
-            label: "Bluelight",
+            role: Tighubad.pulong["LEADER"],
+            label: Tighubad.pulong["Bluelight"],
             char: Qt.resolvedUrl("../Assets/components/char1.png")
         },
         {
-            role: "PARTY",
-            label: "Greyscale",
+            role: Tighubad.pulong["PARTY"],
+            label: Tighubad.pulong["Greyscale"],
             char: Qt.resolvedUrl("../Assets/components/char2.png")
         },
         {
-            role: "PARTY",
-            label: "Inversion",
+            role: Tighubad.pulong["PARTY"],
+            label: Tighubad.pulong["Inversion"],
             char: Qt.resolvedUrl("../Assets/components/char3.png")
         },
     ]
@@ -119,7 +120,7 @@ Scope {
                             property bool isMounted: root.contentVisible
 
                             width: barMain.width
-                            height: isActive ? 90 : 64
+                            height: isActive ? 100 : 75
                             Behavior on height {
                                 NumberAnimation {
                                     duration: 300
@@ -232,7 +233,7 @@ Scope {
                                     Text {
                                         text: barOuter.modelData.role
                                         font.family: bebasNeue.name
-                                        font.pixelSize: 50
+                                        font.pixelSize: 40
                                         color: "white"
                                         rotation: -30
                                         transformOrigin: Item.Center

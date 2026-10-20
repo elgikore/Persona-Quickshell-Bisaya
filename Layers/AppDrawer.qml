@@ -257,7 +257,7 @@ Scope {
                             transformOrigin: Item.Left
                             x: 0
                             y: bladesContainer.height / 2 - height / 2
-                            property real targetRotation: toolskiRoot.isExpanded ? (index - 1) * 20 : 0
+                            property real targetRotation: toolskiRoot.isExpanded ? (index - 1) * 22 : 0
                             property real targetX: toolskiRoot.isExpanded ? 15 : 0
                             property real hoverScale: bladeHoverHandler.hovered ? 1.15 : 1.0
                             rotation: targetRotation
