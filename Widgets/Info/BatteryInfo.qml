@@ -3,6 +3,7 @@ pragma ComponentBehavior: Bound
 import Quickshell
 import Quickshell.Services.UPower
 import QtQuick
+import qs.i18n
 
 Singleton {
     id: root
@@ -34,11 +35,11 @@ Singleton {
         if (isCharging && timeToFull > 0) {
             var h = Math.floor(timeToFull / 3600);
             var m = Math.floor((timeToFull % 3600) / 60);
-            return h + "h " + m + "m until full";
+            return h + "h " + m + "m " + Tighubad.pulong["until full"];
         } else if (!isCharging && timeToEmpty > 0) {
             var h = Math.floor(timeToEmpty / 3600);
             var m = Math.floor((timeToEmpty % 3600) / 60);
-            return h + "h " + m + "m remaining";
+            return h + "h " + m + "m " + Tighubad.pulong["remaining"];
         }
         return "";
     }

@@ -7,6 +7,7 @@ import qs.Data as Dat
 import "../Widgets" as Wid
 import Quickshell.Wayland
 import "../Layers" as Lay
+import qs.i18n
 
 Scope {
     id: root
@@ -213,7 +214,7 @@ Scope {
                         model: [
                             {
                                 icon: "( •_•)",
-                                label: "Calendar",
+                                label: Tighubad.pulong["Calendar"],
                                 action: () => {
                                     calendarLayer.targetScreen = panel.screen;
                                     calendarLayer.shouldShow = true;
@@ -221,7 +222,7 @@ Scope {
                             },
                             {
                                 icon: "^▽^",
-                                label: "Stats",
+                                label: Tighubad.pulong["Stats"],
                                 action: () => {
                                     resumeLayer.targetScreen = panel.screen;
                                     resumeLayer.shouldShow = true;
@@ -229,7 +230,7 @@ Scope {
                             },
                             {
                                 icon: "╥_╥",
-                                label: "Shaders",
+                                label: Tighubad.pulong["Shaders"],
                                 action: () => {
                                     optionsLayer.targetScreen = panel.screen;
                                     optionsLayer.shouldShow = true;
@@ -237,7 +238,7 @@ Scope {
                             },
                             {
                                 icon: "•́︿•̀",
-                                label: "Power",
+                                label: Tighubad.pulong["Power"],
                                 action: () => {
                                     p3rpause.targetScreen = panel.screen;
                                     p3rpause.shouldShow = true;
@@ -246,7 +247,7 @@ Scope {
                         ]
                         Rectangle {
                             id: blade
-                            width: 120
+                            width: 140
                             height: 40
                             radius: 10
                             color: Dat.Colors.color3
