@@ -31,6 +31,10 @@ qrc_*
 
 # Installation directories (if you installed locally for testing)
 .local/
+
+# Fonts folder (since it is not included in the original repo)
+Assets/fonts/ 
+
 ```
 
 ## Recommended Repository Structure:
