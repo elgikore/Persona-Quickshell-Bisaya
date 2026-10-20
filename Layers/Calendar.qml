@@ -4,6 +4,7 @@ import QtQuick
 import QtQuick.Effects
 import qs.Data as Dat
 import qs.Widgets as Wid
+import qs.i18n
 
 Scope {
     id: root
@@ -110,7 +111,7 @@ Scope {
                     color: "white"
                 }
                 Text {
-                    text: Qt.formatDate(Dat.Time.now, "MMMM")
+                    text: Tighubad.pulong[Qt.formatDate(Dat.Time.now, "MMMM")]
                     font.family: "Microsoft Yahei"
                     font.pixelSize: 30
                     font.bold: true
@@ -207,7 +208,15 @@ Scope {
             return deg;
         }
 
-        readonly property var dayNames: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
+        readonly property var dayNames: [
+            Tighubad.pulong["SUN"], 
+            Tighubad.pulong["MON"], 
+            Tighubad.pulong["TUE"], 
+            Tighubad.pulong["WED"], 
+            Tighubad.pulong["THU"], 
+            Tighubad.pulong["FRI"], 
+            Tighubad.pulong["SAT"]
+        ]
         readonly property int dayOfWeek: dateObj.getDay()
         readonly property bool isSunday: dayOfWeek === 0
         readonly property bool isSaturday: dayOfWeek === 6
