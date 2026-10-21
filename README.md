@@ -22,22 +22,16 @@
 >
 > *Naay bag-ong gimugnamugna na lugpong Binisaya sa pag-i18n niini para mas mapahabatian kaysa ipabiling di-hubad ang mga lugpong walay katumbas. Ug trip sad nako.*
 
-> [!NOTE]
->
-> Hover over the dotted lines to see the English equivalent. Some of the words already exist.
->
-> *Igbawa ang mga tinuldok nga badlis para makita ang Paginingles. Naay mga laing lugpong naa na sa kapulongnan.*
-
 ---
 
-## <abbr title="Dependencies">Igsasalig</abbr>
+## Igsasalig (Dependencies)
 
-### <abbr title="Plugins">Pandugang</abbr>
+### Pandugang (Plugins)
 
 Gigamit ang kinustom nga pandugang.
-<b><abbr title="Link">Iglakip: </abbr></b><https://github.com/Yujonpradhananga/Qt6-Cava-plugin>
+**Iglakip (Link):** <https://github.com/Yujonpradhananga/Qt6-Cava-plugin>
 
-Pwede ipamanomano ang <abbr title="Build">paggama</abbr>, o kundili nimo himoon ug <abbr title="Install">tauron</abbr>, pwede ra itanggal ang `CavaVisualizer.qml` ug kalinyang 171-180 iglabot niya sa `WallpaperEngine.qml`:
+Pwede ipamanomano ang paggama (build), o kundili nimo himoon ug tauron (install), pwede ra itanggal ang `CavaVisualizer.qml` ug kalinyang 171-180 iglabot niya sa `WallpaperEngine.qml`:
 
 ```qml
 // tangtanga
@@ -54,10 +48,11 @@ CavaVisualizer {
 ```
 ---
 
-## <abbr title="AppLauncher">IgkokompyuMenu</abbr> 
+## IgkokompyuMenu (AppLauncher)
 
-Nanginahanglan og <abbr title="Keybind">titik-aksyon</abbr> pang-Hyprland para mogana.
-Giani nako ang <abbr title="Setup">pagset-ap</abbr>:
+Nanginahanglan og titik-aksyon (keybind) pang-Hyprland para mogana.
+
+Giani nako ang pagset-ap:
 
 ```lua
 hl.bind(
@@ -68,18 +63,18 @@ hl.bind(
 
 ---
 
-## <abbr title="Credits">Pagtamud</abbr>
-<abbr title="Wallpaper">Dekorlagway</abbr> gikan sa : https://steamcommunity.com/sharedfiles/filedetails/?id=3151551777
+## Pagtamud (Credits)
+Dekorlagway (wallpaper) gikan sa : https://steamcommunity.com/sharedfiles/filedetails/?id=3151551777
 
-Gikan sa [surface-dots](https://github.com/snes19xx/surface-dots/blob/main/.config/hypr/shaders/reading_mode.glsl) ni [@snes19xx](https://github.com/snes19xx) ang <abbr title="Grayscale Shader">pampaabo nga igdiribuho</abbr>.
+Gikan sa [surface-dots](https://github.com/snes19xx/surface-dots/blob/main/.config/hypr/shaders/reading_mode.glsl) ni [@snes19xx](https://github.com/snes19xx) ang pampaabo nga igdiribuho (grayscale shader).
 
-Gumikan sa [Zaphkiel](https://github.com/Rexcrazy804/Zaphkiel) ni [Rexcrazy804](https://github.com/Rexcrazy804) ang <abbr title="Implementation">pagpahimo</abbr> sa <abbr title="Album Art">atubanugtog</abbr> kabahin sa <abbr title="Media Player">panugtugan</abbr>.
+Gumikan sa [Zaphkiel](https://github.com/Rexcrazy804/Zaphkiel) ni [Rexcrazy804](https://github.com/Rexcrazy804) ang pagpahimo (implementation) sa atubanugtog (album art) kabahin sa panugtugan (music player).
 
 Shoutout kay [blairxu13](https://github.com/blairxu13) sa iyang [persona3-website](https://github.com/blairxu13/persona3-website).
 
 ## Pandagitab (Power Menu)
 
-Naka-`loginctl` ang mga <abbr title="Command/Action">palihok</abbr> sa menu; ok ra ipabag-o sa gigamit nimo iglabot ani. 
+Naka-`loginctl` ang mga palihok sa menu; ok ra ipabag-o sa gigamit nimo iglabot ani. 
 
 ---
 
@@ -87,4 +82,4 @@ Naka-`loginctl` ang mga <abbr title="Command/Action">palihok</abbr> sa menu; ok 
 
 Naka-MIT - ok ra kaayo maggamit ug magbag-o-bag-o sa gusto nimo.
 
-<abbr title="Originally made">Gilintunganay</abbr> ni Yujon Pradhananga
+Gilintunganay (originally made) ni Yujon Pradhananga
