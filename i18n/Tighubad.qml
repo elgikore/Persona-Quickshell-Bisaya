@@ -92,7 +92,7 @@ QtObject {
         "Wifi Networks and connections": "Panagkonektar ug WiFi-anan", // Lit. "Connections (Muliple actors doing the action) and places of WiFi"
         "Bluetooth devices": "Igbubluetoothan", // Ig- + bu- (2x) + bluetooth + -an Lit. "Set of utility agents/small tools that use bluetooth"
         "RANK": "ANG-ANG", // Fits more than ranggo because its more on degree or step
-        "System Stats": "Kahimtangsistema",
+        "System Stats": "Kahimtansistema",
         "Wifi networks": "Mga WiFi",
         "OS": "KOMPYUPALIHOKAN", // Kompyu- + palihok (operation/activate) + -an; Lit. "Set of computer actions/operations"
         "CPU": "TGPMPROSESONG PNGUNA", // Tigpamprosesong Panguna; Lit. "One that does multiple process actions that is of a main processor"
