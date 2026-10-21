@@ -9,6 +9,7 @@ Scope {
     id: clockScope
 
     readonly property real vw: 500 / 26.0417
+    readonly property real textLeft: vw * 23.5
 
     Variants {
         model: Quickshell.screens
@@ -107,10 +108,9 @@ Scope {
                     anchors.top: parent.top
                     anchors.topMargin: clockScope.vw * 3.5
                     anchors.left: parent.left
-                    anchors.leftMargin: clockScope.vw * 23.7
-                    width: clockScope.vw * 2
+                    anchors.leftMargin: clockScope.textLeft
                     text: Dat.Time.weekday
-                    horizontalAlignment: Text.AlignHCenter
+                    horizontalAlignment: Text.AlignLeft
                     font.family: "Bahnschrift Condensed"
                     font.pixelSize: clockScope.vw * 1.45
                     font.weight: Font.Normal
@@ -126,11 +126,10 @@ Scope {
                     anchors.top: parent.top
                     anchors.topMargin: clockScope.vw * 2
                     anchors.left: parent.left
-                    anchors.leftMargin: clockScope.vw * 23.5
-                    width: clockScope.vw * 5
+                    anchors.leftMargin: clockScope.textLeft
                     text: Info.BatteryInfo.icon + " " + Info.BatteryInfo.percentageString
                     font.family: "JetBrainsMono Nerd Font"
-                    horizontalAlignment: Text.AlignHCenter
+                    horizontalAlignment: Text.AlignLeft
                     font.pixelSize: clockScope.vw * 1.5
                     font.weight: Font.Bold
                     color: "#fffb9f"
@@ -144,10 +143,9 @@ Scope {
                     anchors.top: parent.top
                     anchors.topMargin: clockScope.vw * 5
                     anchors.left: parent.left
-                    anchors.leftMargin: clockScope.vw * 23.95
-                    width: clockScope.vw * 5.5
+                    anchors.leftMargin: clockScope.textLeft
                     text: Dat.Time.daytime
-                    horizontalAlignment: Text.AlignHCenter
+                    horizontalAlignment: Text.AlignLeft
                     font.family: "Microsoft Yahei"
                     font.pixelSize: clockScope.vw * 1.3
                     font.weight: Font.Bold
