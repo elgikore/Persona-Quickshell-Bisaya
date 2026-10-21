@@ -3,7 +3,7 @@
 <div align="center">
 
 [![QML](https://img.shields.io/badge/QML-Quickshell-7aa2f7?style=for-the-badge&logo=qt&logoColor=white)](https://quickshell.outfoxxed.me)
-[![Binituon](https://img.shields.io/github/stars/Yujonpradhananga/Persona-Quickshell-?style=for-the-badge&color=e0af68&logoColor=white&label=Binituon)](https://github.com/Yujonpradhananga/Persona-Quickshell-/stargazers)
+[![Binituon](https://img.shields.io/github/stars/elgikore/Persona-Quickshell-Bisaya?style=for-the-badge&color=e0af68&logoColor=white&label=Binituon)](https://github.com/Yujonpradhananga/Persona-Quickshell-/stargazers)
 [![Hyprland](https://img.shields.io/badge/Hyprland-ginasuporta-2ac3de?style=for-the-badge&logoColor=white)](https://hyprland.org)
 [![Niaging Komit](https://img.shields.io/github/last-commit/elgikore/Persona-Quickshell-Bisaya?style=for-the-badge&color=9ece6a&logoColor=white&label=Niaging&nbsp;Komit)](https://github.com/Yujonpradhananga/Persona-Quickshell-/commits/main)
 
