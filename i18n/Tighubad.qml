@@ -66,7 +66,7 @@ QtObject {
         "System Stats and Info": "Kahimtang ug Kasayoran sa Sistema",
         "Network": "Kaharugan", // Lit. "Abstract quality of trellis"; same strat as Filipino's "kabalagan" (network) where balag is trellis
         "Wifi Networks and connections": "Panagkonektar ug WiFi-anan", // Lit. "Connections (Muliple actors doing the action) and places of WiFi"
-        "Bluetooth devices": "Igbubluetoothan", //  Ig- + bu- (2x) + bluetooth + -an Lit. "Set of utility agents/small tools that use bluetooth"
+        "Bluetooth devices": "Igbubluetoothan", // Ig- + bu- (2x) + bluetooth + -an Lit. "Set of utility agents/small tools that use bluetooth"
         "RANK": "ANG-ANG", // Fits more than ranggo because its more on degree or step
         "System Stats": "Kahimtangsistema",
         "Wifi networks": "Mga WiFi",
@@ -81,6 +81,10 @@ QtObject {
         "No Devices": "Walay Pangigbubluetooth", // Lit. "Doesn't have bluetooth devices (muliplicity is implied by pang-)"
         "Disabled": "Gilagumlom", // Lit. "Laid dormant"
         "Paired": "Nakatala", // Lit. "Recorded"
-        "Found": "Naa" // Bluetooth context implied
+        "Found": "Naa", // Bluetooth context implied
+
+        // Searchapp.qml
+        "APPS": "IGKOKOMPYU", // Ig- + ko- (2x) + kompyu; Lit. "Utility agent/small computing tool"
+        "Search...": "Magpangita..."
     })
 }

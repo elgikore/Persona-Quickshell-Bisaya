@@ -7,6 +7,7 @@ import Quickshell.Widgets
 import Quickshell.Wayland
 import Quickshell.Io
 import QtQuick.Effects
+import qs.i18n
 
 import qs.Widgets as Wid
 
@@ -40,7 +41,7 @@ Scope {
                 left: true
                 bottom: true
             }
-            implicitWidth: 450
+            implicitWidth: 550
             color: "transparent"
             WlrLayershell.layer: WlrLayer.Top
             WlrLayershell.namespace: "searchapp"
@@ -90,7 +91,7 @@ Scope {
                 anchors.left: parent.left
                 anchors.leftMargin: 50
                 anchors.verticalCenter: parent.verticalCenter
-                width: 380
+                width: 440
                 height: 700
                 Rectangle {
                     anchors.fill: parent
@@ -123,7 +124,7 @@ Scope {
                             anchors.left: parent.left
                             anchors.leftMargin: 20
                             anchors.verticalCenter: parent.verticalCenter
-                            width: 160
+                            width: 230
                             height: 50
                             onPaint: {
                                 var ctx = getContext("2d");
@@ -139,7 +140,7 @@ Scope {
                             }
                             Text {
                                 anchors.centerIn: parent
-                                text: "APPS"
+                                text: Tighubad.pulong["APPS"]
                                 font.pixelSize: 22
                                 font.bold: true
                                 color: "#ffffff"
@@ -170,7 +171,7 @@ Scope {
                                 Text {
                                     anchors.fill: parent
                                     verticalAlignment: Text.AlignVCenter
-                                    text: "Search..."
+                                    text: Tighubad.pulong["Search..."]
                                     color: "#44ffffff"
                                     font.pixelSize: 13
                                     visible: search.text === ""
@@ -206,6 +207,11 @@ Scope {
                         id: appList
                         width: parent.width
                         height: panelRoot.height - 82
+                        transform: Matrix4x4 {
+                            // Follows the parellogram pattern so that the white hover effect won't overflow
+                            // list starts 82px below the panel top, so offset by the shear already accumulated there
+                            matrix: Qt.matrix4x4(1, -0.04, 0, -0.04 * 82, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+                        }
                         clip: true
                         currentIndex: 0
                         model: filteredApps
