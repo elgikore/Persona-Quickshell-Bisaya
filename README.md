@@ -3,12 +3,11 @@
 <div align="center">
 
 [![QML](https://img.shields.io/badge/QML-Quickshell-7aa2f7?style=for-the-badge&logo=qt&logoColor=white)](https://quickshell.outfoxxed.me)
-[![Stars](https://img.shields.io/github/stars/Yujonpradhananga/Persona-Quickshell-?style=for-the-badge&color=e0af68&logoColor=white)](https://github.com/Yujonpradhananga/Persona-Quickshell-/stargazers)
-[![Hyprland](https://img.shields.io/badge/Hyprland-supported-2ac3de?style=for-the-badge&logoColor=white)](https://hyprland.org)
-[![Last Commit](https://img.shields.io/github/last-commit/Yujonpradhananga/Persona-Quickshell-?style=for-the-badge&color=9ece6a&logoColor=white)](https://github.com/Yujonpradhananga/Persona-Quickshell-/commits/main)
+[![Binituon](https://img.shields.io/github/stars/Yujonpradhananga/Persona-Quickshell-?style=for-the-badge&color=e0af68&logoColor=white&label=Binituon)](https://github.com/Yujonpradhananga/Persona-Quickshell-/stargazers)
+[![Hyprland](https://img.shields.io/badge/Hyprland-ginasuporta-2ac3de?style=for-the-badge&logoColor=white)](https://hyprland.org)
+[![Niaging Komit](https://img.shields.io/github/last-commit/elgikore/Persona-Quickshell-Bisaya?style=for-the-badge&color=9ece6a&logoColor=white&label=Niaging&nbsp;Komit)](https://github.com/Yujonpradhananga/Persona-Quickshell-/commits/main)
 
 </div>
-
 
 
 <https://github.com/user-attachments/assets/7e6fd291-dd28-48fa-83aa-81556558b132>
@@ -17,18 +16,28 @@
 
 
 
+> [!IMPORTANT]
+>
+> This i18n contains newly-made non-standard Bisaya terms to make it more immersive than just leaving words that don't have equivalents untranslated. And also because why not.
+>
+> *Naay bag-ong gimugnamugna na lugpong Binisaya sa pag-i18n niini para mas mapahabatian kaysa ipabiling di-hubad ang mga lugpong walay katumbas. Ug trip sad nako.*
 
+> [!NOTE]
+>
+> Hover over the dotted lines to see the English equivalent. Some of the words already exist.
+>
+> *Igbawa ang mga tinuldok nga badlis para makita ang Paginingles. Naay mga laing lugpong naa na sa kapulongnan.*
 
 ---
 
-## Igsasalig (Dependencies)
+## <abbr title="Dependencies">Igsasalig</abbr>
 
-### Pandugang (Plugins)
+### <abbr title="Plugins">Pandugang</abbr>
 
-Gigamit kining kinustom nga pandugang:
-**Lakip (Link):** <https://github.com/Yujonpradhananga/Qt6-Cava-plugin>
+Gigamit ang kinustom nga pandugang.
+<b><abbr title="Link">Iglakip: </abbr></b><https://github.com/Yujonpradhananga/Qt6-Cava-plugin>
 
-Pwede ipamanomano ang paggama (build), o kundili nimo himoon ug tauron (install), pwede ra itanggal ang `CavaVisualizer.qml` ug kalinyang  171-180 iglabot niya sa `WallpaperEngine.qml`:
+Pwede ipamanomano ang <abbr title="Build">paggama</abbr>, o kundili nimo himoon ug <abbr title="Install">tauron</abbr>, pwede ra itanggal ang `CavaVisualizer.qml` ug kalinyang 171-180 iglabot niya sa `WallpaperEngine.qml`:
 
 ```qml
 // tangtanga
@@ -45,10 +54,10 @@ CavaVisualizer {
 ```
 ---
 
-## Igkokompyumenu (AppLauncher)
+## <abbr title="AppLauncher">IgkokompyuMenu</abbr> 
 
-Nanginahanglan og titik-aksyon (keybind) pang-Hyprland para mogana.
-Giani nako ang pagset-ap (setup):
+Nanginahanglan og <abbr title="Keybind">titik-aksyon</abbr> pang-Hyprland para mogana.
+Giani nako ang <abbr title="Setup">pagset-ap</abbr>:
 
 ```lua
 hl.bind(
@@ -59,18 +68,18 @@ hl.bind(
 
 ---
 
-## Pagtamud (Credits)
-Dekorlagway (wallpaper) gikan sa : https://steamcommunity.com/sharedfiles/filedetails/?id=3151551777
+## <abbr title="Credits">Pagtamud</abbr>
+<abbr title="Wallpaper">Dekorlagway</abbr> gikan sa : https://steamcommunity.com/sharedfiles/filedetails/?id=3151551777
 
-Gikan sa [surface-dots](https://github.com/snes19xx/surface-dots/blob/main/.config/hypr/shaders/reading_mode.glsl) ni [@snes19xx](https://github.com/snes19xx) ang pampaabo nga igdiribuho (grayscale shader).
+Gikan sa [surface-dots](https://github.com/snes19xx/surface-dots/blob/main/.config/hypr/shaders/reading_mode.glsl) ni [@snes19xx](https://github.com/snes19xx) ang <abbr title="Grayscale Shader">pampaabo nga igdiribuho</abbr>.
 
-Gumikan sa [Zaphkiel](https://github.com/Rexcrazy804/Zaphkiel) ni [Rexcrazy804](https://github.com/Rexcrazy804) ang pagpahimo (implementation) sa atubanugtog (album art) kabahin sa panugtog (media player).
+Gumikan sa [Zaphkiel](https://github.com/Rexcrazy804/Zaphkiel) ni [Rexcrazy804](https://github.com/Rexcrazy804) ang <abbr title="Implementation">pagpahimo</abbr> sa <abbr title="Album Art">atubanugtog</abbr> kabahin sa <abbr title="Media Player">panugtugan</abbr>.
 
 Shoutout kay [blairxu13](https://github.com/blairxu13) sa iyang [persona3-website](https://github.com/blairxu13/persona3-website).
 
 ## Pandagitab (Power Menu)
 
-Naka-`loginctl` ang mga palihok sa menu; ok ra ipabag-o sa gigamit nimo iglabot ani. 
+Naka-`loginctl` ang mga <abbr title="Command/Action">palihok</abbr> sa menu; ok ra ipabag-o sa gigamit nimo iglabot ani. 
 
 ---
 
@@ -78,4 +87,4 @@ Naka-`loginctl` ang mga palihok sa menu; ok ra ipabag-o sa gigamit nimo iglabot 
 
 Naka-MIT - ok ra kaayo maggamit ug magbag-o-bag-o sa gusto nimo.
 
-Gilintunganay (originally made) ni Yujon Pradhananga
+<abbr title="Originally made">Gilintunganay</abbr> ni Yujon Pradhananga
