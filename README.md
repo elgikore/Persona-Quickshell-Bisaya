@@ -6,6 +6,7 @@
 [![Binituon](https://img.shields.io/github/stars/elgikore/Persona-Quickshell-Bisaya?style=for-the-badge&color=e0af68&logoColor=white&label=Binituon)](https://github.com/Yujonpradhananga/Persona-Quickshell-/stargazers)
 [![Hyprland](https://img.shields.io/badge/Hyprland-ginasuporta-2ac3de?style=for-the-badge&logoColor=white)](https://hyprland.org)
 [![Niaging Komit](https://img.shields.io/github/last-commit/elgikore/Persona-Quickshell-Bisaya?style=for-the-badge&color=9ece6a&logoColor=white&label=Niaging&nbsp;Komit)](https://github.com/Yujonpradhananga/Persona-Quickshell-/commits/main)
+[![Naglintunganay](https://img.shields.io/badge/Naglintunganay-Yujon&nbsp;pradhananga-00a900?style=for-the-badge&logoColor=white)](https://github.com/Yujonpradhananga/Persona-Quickshell)
 
 </div>
 
