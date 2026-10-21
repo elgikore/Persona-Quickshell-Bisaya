@@ -353,7 +353,7 @@ Item {
                 }
 
                 Text {
-                    text: revealRoot.activeShaderIndex === revealRoot.localTab ? "● ON" : "○ OFF"
+                    text: revealRoot.activeShaderIndex === revealRoot.localTab ? "● " + Tighubad.pulong["ON"] : "○ " + Tighubad.pulong["OFF"]
                     font.family: bebasNeue.name
                     font.pixelSize: 18
                     color: revealRoot.activeShaderIndex === revealRoot.localTab ? "#4a8fff" : "#66ffffff"

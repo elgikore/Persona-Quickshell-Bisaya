@@ -5,7 +5,7 @@ QtObject {
     readonly property var pulong: ({
         // NetInfo.qml
         "Not Connected": "Walay Nakakonektar",
-        "disabled": "gilagumlom", // Lit. "Lie dormant"
+        "disabled": "gilagumlom", // Lit. "Laid dormant"
         "connected": "nakakonektar",
         "disconnected": "nidiskonektar", // diskonektar is patterned from diskarga
         
@@ -58,5 +58,29 @@ QtObject {
         "Filter to reduce Bluelight": "Pampatanggal sa Bughaw nga silom", // Lit. "Instrument to remove blue color spectrum"
         "Black and white only": "Itom ug puti ra",
         "Invert all the colors cuz why not": "Baliktaron tanang kolor kay trip nako", // Lit. "Invert all the colors just because"
+        "ON": "NAABLI",
+        "OFF": "NASIRA",
+
+        // Resume.qml
+        "LIST": "LISTAHAN",
+        "System Stats and Info": "Kahimtang ug Kasayoran sa Sistema",
+        "Network": "Kaharugan", // Lit. "Abstract quality of trellis"; same strat as Filipino's "kabalagan" (network) where balag is trellis
+        "Wifi Networks and connections": "Panagkonektar ug WiFi-anan", // Lit. "Connections (Muliple actors doing the action) and places of WiFi"
+        "Bluetooth devices": "Igbubluetoothan", //  Ig- + bu- (2x) + bluetooth + -an Lit. "Set of utility agents/small tools that use bluetooth"
+        "RANK": "ANG-ANG", // Fits more than ranggo because its more on degree or step
+        "System Stats": "Kahimtangsistema",
+        "Wifi networks": "Mga WiFi",
+        "OS": "KOMPYUPALIHOKAN", // Kompyu- + palihok (operation/activate) + -an; Lit. "Set of computer actions/operations"
+        "CPU": "TGPMPROSESONG PNGUNA", // Tigpamprosesong Panguna; Lit. "One that does multiple process actions that is of a main processor"
+        "RAM": "HIMEMOMEMORI", // Him- (propensity) + memori (2x); Lit. "Propensity to alloc./do something to memory again and again"
+        "DISK": "SAMPAYLUHAN", // Sam- -an + paylu (from Japanese fairu to avoid conjugation awkwardness with payl and readjsuted r -> l); Lit. "One big whole file" (Everything is a file)
+        "Users": "Manggagamit", // Lit. "One whose occupation is to use"
+        "Connected": "Nakakonektar",
+        "Bluetooth Off": "Nakasirado", // Bluetooth context implied
+        "No Adapter": "Walay Pangbluetooth", // Lit. "Doesn't have bluetooth capabilities"
+        "No Devices": "Walay Pangigbubluetooth", // Lit. "Doesn't have bluetooth devices (muliplicity is implied by pang-)"
+        "Disabled": "Gilagumlom", // Lit. "Laid dormant"
+        "Paired": "Nakatala", // Lit. "Recorded"
+        "Found": "Naa" // Bluetooth context implied
     })
 }

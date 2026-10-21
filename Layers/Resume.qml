@@ -6,6 +6,7 @@ import qs.Data as Dat
 import qs.Widgets as Wid
 import qs.Widgets.Info as Info
 import QtQuick.Controls
+import qs.i18n
 
 Scope {
     id: root
@@ -87,7 +88,7 @@ Scope {
                     }
                     spacing: 10
                     Text {
-                        text: "LIST"
+                        text: Tighubad.pulong["LIST"]
                         font.family: "proggyfonts"
                         font.pixelSize: 72
                         color: "#f6fbff"
@@ -97,20 +98,20 @@ Scope {
                         model: [
                             {
                                 badge: "I",
-                                title: "Stats",
-                                subtitle: "System Stats and Info",
+                                title: Tighubad.pulong["Stats"],
+                                subtitle: Tighubad.pulong["System Stats and Info"],
                                 rank: 3
                             },
                             {
                                 badge: "II",
-                                title: "Network",
-                                subtitle: "Wifi Networks and connections",
+                                title: Tighubad.pulong["Network"],
+                                subtitle: Tighubad.pulong["Wifi Networks and connections"],
                                 rank: 4
                             },
                             {
                                 badge: "III",
                                 title: "Bluetooth",
-                                subtitle: "Bluetooth Devices",
+                                subtitle: Tighubad.pulong["Bluetooth devices"],
                                 rank: 5
                             },
                         ]
@@ -217,7 +218,7 @@ Scope {
                                 }
                                 spacing: 8
                                 Text {
-                                    text: "RANK"
+                                    text: Tighubad.pulong["RANK"]
                                     font.family: "Montserrat"
                                     font.pixelSize: 22
                                     color: cardWrap.isActive ? "#000" : "#9ffbff"
@@ -342,7 +343,11 @@ Scope {
                         }
                         height: 92
                         property string indexText: ["01", "02", "03"][detailPanel.parent.activeCard]
-                        property string titleText: ["System Stats", "Wifi networks", "Bluetooth devices"][detailPanel.parent.activeCard]
+                        property string titleText: [
+                            Tighubad.pulong["System Stats"], 
+                            Tighubad.pulong["Wifi networks"], 
+                            Tighubad.pulong["Bluetooth devices"]
+                        ][detailPanel.parent.activeCard]
                         onIndexTextChanged: requestPaint()
                         Connections {
                             target: root
@@ -411,36 +416,36 @@ Scope {
                                     var _ = Info.SysInfo.cpuUsage + Info.SysInfo.memUsage + Info.SysInfo.diskUsage;
                                     return [[
                                             {
-                                                title: "OS",
+                                                title: Tighubad.pulong["OS"],
                                                 status: Info.SysInfo.osName
                                             },
                                             {
-                                                title: "CPU",
+                                                title: Tighubad.pulong["CPU"],
                                                 status: Math.round(Info.SysInfo.cpuUsage * 100) + "%"
                                             },
                                             {
-                                                title: "RAM",
+                                                title: Tighubad.pulong["RAM"],
                                                 status: Info.SysInfo.memText
                                             },
                                             {
-                                                title: "DISK",
+                                                title: Tighubad.pulong["DISK"],
                                                 status: Info.SysInfo.diskText
                                             },
                                             {
-                                                title: "Users",
+                                                title: Tighubad.pulong["Users"],
                                                 status: Info.SysInfo.loggedInUsers
                                             },
                                         ], Info.NetInfo.networks.map((n, i) => ({
                                                     title: n.ssid,
-                                                    status: n.active ? "Connected" : (n.strength + "%")
+                                                    status: n.active ? Tighubad.pulong["Connected"] : (n.strength + "%")
                                                 })), Info.BluetoothInfo.friendlyDeviceList.length === 0 ? [
                                             {
-                                                title: Info.BluetoothInfo.available ? "Bluetooth Off" : "No Adapter",
-                                                status: Info.BluetoothInfo.enabled ? "No Devices" : "Disabled"
+                                                title: Info.BluetoothInfo.available ? Tighubad.pulong["Bluetooth Off"] : Tighubad.pulong["No Adapter"],
+                                                status: Info.BluetoothInfo.enabled ? Tighubad.pulong["No Devices"] : Tighubad.pulong["Disabled"]
                                             }
                                         ] : Info.BluetoothInfo.friendlyDeviceList.map(d => ({
                                                     title: d.name,
-                                                    status: d.connected ? "Connected" : (d.paired ? "Paired" : "Found")
+                                                    status: d.connected ? Tighubad.pulong["Connected"] : (d.paired ? Tighubad.pulong["Paired"] : Tighubad.pulong["Found"])
                                                 })), [],][ac];
                                 }
 
