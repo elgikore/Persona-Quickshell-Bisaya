@@ -20,8 +20,12 @@
 > [!IMPORTANT]
 >
 > This i18n contains newly-made non-standard Bisaya terms to make it more immersive than just leaving words that don't have equivalents untranslated. And also because why not.
+> 
+> Explanations on the terms are [here](#pahibalo-sa-tl-tl-note) and [this file](./i18n/Tighubad.qml).
 >
 > *Naay bag-ong gimugnamugna na lugpong Binisaya sa pag-i18n niini para mas mapahabatian kaysa ipabiling di-hubad ang mga lugpong walay katumbas. Ug trip sad nako.*
+>
+> Kahubitan sa mga lugpong naa ra [diri](#pahibalo-sa-tl-tl-note) ug [kining paylu](./i18n/Tighubad.qml).
 
 ---
 
