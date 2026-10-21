@@ -21,17 +21,17 @@
 
 ---
 
-## Dependencies
+## Igsasalig (Dependencies)
 
-### Plugins
+### Pandugang (Plugins)
 
-A custom cava plugin is used here:
-**Link:** <https://github.com/Yujonpradhananga/Qt6-Cava-plugin>
+Gigamit kining kinustom nga pandugang:
+**Lakip (Link):** <https://github.com/Yujonpradhananga/Qt6-Cava-plugin>
 
-You can build the plugin mannually or if you dont want to mannually build it and go through the installation process you can delete the `CavaVisualizer.qml` file and delete these lines 171-180 from the `WallpaperEngine.qml` file:
+Pwede ipamanomano ang paggama (build), o kundili nimo himoon ug tauron (install), pwede ra itanggal ang `CavaVisualizer.qml` ug kalinyang  171-180 iglabot niya sa `WallpaperEngine.qml`:
 
 ```qml
-//delete these
+// tangtanga
 CavaVisualizer {
   id: s1_cava
   anchors {
@@ -45,36 +45,37 @@ CavaVisualizer {
 ```
 ---
 
-## AppLauncher
+## Igkokompyumenu (AppLauncher)
 
-The AppLauncher requires a hyprland keybind for it to work.
-Mine is set like this:
+Nanginahanglan og titik-aksyon (keybind) pang-Hyprland para mogana.
+Giani nako ang pagset-ap (setup):
 
 ```lua
 hl.bind(
     mainMod .. " + R",
-    hl.dsp.exec_cmd("qs -c /path to where you have installed the repo/Persona-Quickshell/ ipc call searchapp toggle")
+    hl.dsp.exec_cmd("qs -c /lugar kung asa nimo napabutang ang ripo (repo)/Persona-Quickshell/ ipc call searchapp toggle")
 )
 ```
 
 ---
 
-## Credits
-The wallpaper is from : https://steamcommunity.com/sharedfiles/filedetails/?id=3151551777
+## Pagtamud (Credits)
+Dekorlagway (wallpaper) gikan sa : https://steamcommunity.com/sharedfiles/filedetails/?id=3151551777
 
-The greyscale shader is from [@snes19xx](https://github.com/snes19xx)'s [surface-dots](https://github.com/snes19xx/surface-dots/blob/main/.config/hypr/shaders/reading_mode.glsl).
+Gikan sa [surface-dots](https://github.com/snes19xx/surface-dots/blob/main/.config/hypr/shaders/reading_mode.glsl) ni [@snes19xx](https://github.com/snes19xx) ang pampaabo nga igdiribuho (grayscale shader).
 
-The media player's album art implementation is taken from [Rexcrazy804](https://github.com/Rexcrazy804)'s [Zaphkiel](https://github.com/Rexcrazy804/Zaphkiel).
+Gumikan sa [Zaphkiel](https://github.com/Rexcrazy804/Zaphkiel) ni [Rexcrazy804](https://github.com/Rexcrazy804) ang pagpahimo (implementation) sa atubanugtog (album art) kabahin sa panugtog (media player).
 
-Shoutout to [blairxu13](https://github.com/blairxu13)'s [persona3-website](https://github.com/blairxu13/persona3-website).
-## Power Menu
+Shoutout kay [blairxu13](https://github.com/blairxu13) sa iyang [persona3-website](https://github.com/blairxu13/persona3-website).
 
-The power menu currently uses loginctl commands, feel free to change them to your needs.
+## Pandagitab (Power Menu)
+
+Naka-`loginctl` ang mga palihok sa menu; ok ra ipabag-o sa gigamit nimo iglabot ani. 
 
 ---
 
-## License
+## Lisensya
 
-MIT License - feel free to use and modify as needed.
+Naka-MIT - ok ra kaayo maggamit ug magbag-o-bag-o sa gusto nimo.
 
-Created by Yujon Pradhananga
+Gilintunganay (originally made) ni Yujon Pradhananga
