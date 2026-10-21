@@ -77,6 +77,19 @@ Shoutout kay [blairxu13](https://github.com/blairxu13) sa iyang [persona3-websit
 
 Naka-`loginctl` ang mga palihok sa menu; ok ra ipabag-o sa gigamit nimo iglabot ani. 
 
+## Mga Paagititik (Fonts Used)
+Kinahanglang itaod (install) ang mga paagititik (fonts) nga nakalista kay tinuyo wala giapil sa niining ripo: 
+
+* Bebas Neue
+* Montserrat and Montserrat Light 
+* Microsoft YaHei 
+* Bahnschrift Condensed
+* JetBrainsMono Nerd Font
+* Symbols Nerd Font
+* Material Symbols Rounded (timailhan/icons)
+* Linux Biolinum
+* Proggyfonts
+
 ---
 
 ## Lisensya
@@ -84,3 +97,67 @@ Naka-`loginctl` ang mga palihok sa menu; ok ra ipabag-o sa gigamit nimo iglabot 
 Naka-MIT - ok ra kaayo maggamit ug magbag-o-bag-o sa gusto nimo.
 
 Gilintunganay (originally made) ni Yujon Pradhananga
+
+
+---
+
+## Pahibalo sa TL (TL Note)
+> [!NOTE]
+>
+> Kinamaayohan isip sa langgikit (Goated for affixes): 
+> * [https://philippinesillustrated.blogspot.com/2023/10/affixes-used-in-cebuano.html](https://philippinesillustrated.blogspot.com/2023/10/affixes-used-in-cebuano.html)
+> * [https://en.wiktionary.org/wiki/Category:Cebuano_morphemes](https://en.wiktionary.org/wiki/Category:Cebuano_morphemes)
+> * [https://www.gutenberg.org/cache/epub/40074/pg40074-images.html](https://www.gutenberg.org/cache/epub/40074/pg40074-images.html)
+
+
+* Paggama (Build), Taod (Install), Gilintunganay (Originally Made)
+  * Already exists
+* Ripo (Repo / Repository), Komit (Commit)
+  * Transliteration
+* Binituon (Stars)
+  * Bituon + *-in-* ("something is put in something" reading)
+* Igsasalig (Dependencies) 
+  * *Ig- (2x first syllable)* (Agency in doing something, oftentimes analogous to a helper function/tool e.g. igsusulat = pen) + salig (depend/lean on)
+  * Lit. "Tools to lean/depend on"
+* Pandugang (Plugins)
+  * Patterned from pandagdag in Filipino
+  * Lit. "Implements"
+* Iglakip (Link)
+  * *Ig-* (relation/related to) + lakip (attach)
+  * Lit. "Related attachment"
+* Igkokompyu (App / Software)
+  * *Ig- (2x first syllable)* + kompyu (compu-/computer)
+  * Lit. "Tools for computers"
+* Igkokompyumenu (AppLauncher)
+  * Igkokompyu + menu
+  * Lit. "Menu on tools for computers" because an app launcher makes you select apps to launch
+* Titik-aksyon (Keybind)
+  * Assign a letter (titik) to an action (aksyon)
+* Pagtamud (Credits)
+  * Originally meaning [acknowledgement](https://www.binisaya.com/node/21?search=binisaya&word=pagtamud&Search=Search)
+* Dekorlagway (Wallpaper)
+  * Dekor (decor) + hulagway (picture)
+* Pampaabo (Grayscale Filter)
+  * *Pampa-* (instrument to cause) + abo (gray/ash)
+  * Lit. "Instrument to cause ashes"
+* Igdiribuho (Shader)
+  * *Ig- (2x first syllable w/ d-r alteration)* + dibuho (drawing)
+  * Lit. "Helper functions/tools for drawing"
+* Pagpahimo (Implementation)
+  * Common word for the "act of making something"
+* Atubanugtog (Album Art)
+  * Atubang (front) + tugtog (play as in play sound/music)
+  * By simplification: Atubangtugtog ➜ Atubantugtog (same mechanic as pang- ➜ pan- when t) ➜ Atubanugtog (same mechanic as pan- removing t at times)
+  * Lit. "Front music/sound" (works even if an album is a single song)
+* Panugtugan (Music Player)
+  * *Pan-* ("instrument/tool for" reading) + tugtog (play as in play sound/music) + *-an* ("on a place" reading; location focus)
+  * Lit. "Instrument for playing music on a thing"
+* Pandagitab (Power Menu)
+  * *Pan-* + dagitab (electricity)
+  * Lit. "Instrument for power/electricity"
+* Paagititik (Font)
+  * Paagi (mode / manner / method) + titik (letter)
+  * Agi also means handwriting so it also adds another layer
+  * Lit. "Method of letter(ing)"
+* Timailhan (Icon)
+  * Originally meaning [emblem or symbol](https://www.binisaya.com/node/21?search=binisaya&word=timailhan&Search=Search)
