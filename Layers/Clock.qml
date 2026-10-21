@@ -106,8 +106,8 @@ Scope {
                     z: 50
                     anchors.top: parent.top
                     anchors.topMargin: clockScope.vw * 3.5
-                    anchors.right: parent.right
-                    anchors.rightMargin: clockScope.vw * 11
+                    anchors.left: parent.left
+                    anchors.leftMargin: clockScope.vw * 23.7
                     width: clockScope.vw * 2
                     text: Dat.Time.weekday
                     horizontalAlignment: Text.AlignHCenter
@@ -125,8 +125,8 @@ Scope {
                     z: 50
                     anchors.top: parent.top
                     anchors.topMargin: clockScope.vw * 2
-                    anchors.right: parent.right
-                    anchors.rightMargin: clockScope.vw * 7.7
+                    anchors.left: parent.left
+                    anchors.leftMargin: clockScope.vw * 23.5
                     width: clockScope.vw * 5
                     text: Info.BatteryInfo.icon + " " + Info.BatteryInfo.percentageString
                     font.family: "JetBrainsMono Nerd Font"
@@ -143,8 +143,8 @@ Scope {
                     z: 50
                     anchors.top: parent.top
                     anchors.topMargin: clockScope.vw * 5
-                    anchors.right: parent.right
-                    anchors.rightMargin: clockScope.vw * 7
+                    anchors.left: parent.left
+                    anchors.leftMargin: clockScope.vw * 23.95
                     width: clockScope.vw * 5.5
                     text: Dat.Time.daytime
                     horizontalAlignment: Text.AlignHCenter
