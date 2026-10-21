@@ -1,6 +1,7 @@
 pragma Singleton
 import Quickshell
 import QtQuick
+import qs.i18n
 
 Singleton {
     SystemClock {
@@ -25,24 +26,45 @@ Singleton {
     }
 
     readonly property string date: {
-        const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+        const months = [
+            Tighubad.pulong["JAN"], 
+            Tighubad.pulong["FEB"], 
+            Tighubad.pulong["MAR"], 
+            Tighubad.pulong["APR"], 
+            Tighubad.pulong["MAY"], 
+            Tighubad.pulong["JUN"], 
+            Tighubad.pulong["JUL"], 
+            Tighubad.pulong["AUG"], 
+            Tighubad.pulong["SEP"], 
+            Tighubad.pulong["OCT"], 
+            Tighubad.pulong["NOV"], 
+            Tighubad.pulong["DEC"]
+        ];
         return months[now.getMonth()] + "·" + now.getDate().toString().padStart(2, "0");
     }
 
     readonly property string weekday: {
-        const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        const days = [
+            Tighubad.pulong["Sun"], 
+            Tighubad.pulong["Mon"], 
+            Tighubad.pulong["Tue"], 
+            Tighubad.pulong["Wed"], 
+            Tighubad.pulong["Thu"], 
+            Tighubad.pulong["Fri"], 
+            Tighubad.pulong["Sat"]
+        ];
         return days[now.getDay()];
     }
 
     readonly property string daytime: {
         const h = now.getHours();
         if (h >= 5 && h < 12)
-            return "Dawn";
+            return Tighubad.pulong["Dawn"];
         if (h >= 12 && h < 17)
-            return "Noon";
+            return Tighubad.pulong["Noon"];
         if (h >= 17 && h < 21)
-            return "Dusk";
-        return "Dark";
+            return Tighubad.pulong["Dusk"];
+        return Tighubad.pulong["Dark"];
     }
 
     readonly property real moonPhaseDegree: {

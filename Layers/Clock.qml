@@ -17,7 +17,7 @@ Scope {
             required property var modelData
             screen: modelData
             color: "transparent"
-            implicitWidth: 500
+            implicitWidth: 700
             implicitHeight: 200
 
             anchors {
@@ -40,7 +40,7 @@ Scope {
                     anchors.top: parent.top
                     anchors.right: parent.right
                     anchors.rightMargin: -clockScope.vw * 1.5625
-                    width: clockScope.vw * 26.0417
+                    width: clockScope.vw * 28
                     height: clockScope.vw * 7.2917
                     clip: true
 
@@ -89,7 +89,7 @@ Scope {
                     z: 50
                     anchors.top: parent.top
                     anchors.right: parent.right
-                    anchors.rightMargin: clockScope.vw * 12
+                    anchors.rightMargin: clockScope.vw * 13.8
                     anchors.topMargin: clockScope.vw * 0.2
                     text: Dat.Time.time
                     font.family: "Microsoft Yahei"
@@ -107,7 +107,7 @@ Scope {
                     anchors.top: parent.top
                     anchors.topMargin: clockScope.vw * 3.5
                     anchors.right: parent.right
-                    anchors.rightMargin: clockScope.vw * 9
+                    anchors.rightMargin: clockScope.vw * 11
                     width: clockScope.vw * 2
                     text: Dat.Time.weekday
                     horizontalAlignment: Text.AlignHCenter
@@ -126,7 +126,7 @@ Scope {
                     anchors.top: parent.top
                     anchors.topMargin: clockScope.vw * 2
                     anchors.right: parent.right
-                    anchors.rightMargin: clockScope.vw * 6
+                    anchors.rightMargin: clockScope.vw * 7.7
                     width: clockScope.vw * 5
                     text: Info.BatteryInfo.icon + " " + Info.BatteryInfo.percentageString
                     font.family: "JetBrainsMono Nerd Font"
@@ -144,7 +144,7 @@ Scope {
                     anchors.top: parent.top
                     anchors.topMargin: clockScope.vw * 5
                     anchors.right: parent.right
-                    anchors.rightMargin: clockScope.vw * 6.5
+                    anchors.rightMargin: clockScope.vw * 7
                     width: clockScope.vw * 5.5
                     text: Dat.Time.daytime
                     horizontalAlignment: Text.AlignHCenter

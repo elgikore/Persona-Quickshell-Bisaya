@@ -19,14 +19,22 @@ QtObject {
         "Shaders": "Igdiribuho", // Ig- + di- (2x) with d-r alternation + dibuho Lit. "Utility agent/small tool for drawing"
         "Power": "Pandagitab", // Lit. "Instrument for electricity" (pan- + dagitab), also dagitab is cooler than kuryente
         
-        // Calendar.qml
+        // Calendar.qml / Time.qml
+        // I just realized most of the shortform abbreviations have less standardization lmao
         "SUN": "DOM",
         "MON": "LUN",
-        "TUE": "MAR",
-        "WED": "MIR",
-        "THU": "HUE",
-        "FRI": "BIY",
+        "TUE": "MRT", // To prevent conflict with Marso (Mar)
+        "WED": "MIR", // Abbrev. from pronounciation
+        "THU": "HUE", // Abbrev. from pronounciation
+        "FRI": "BIR", // Abbrev. from pronounciation
         "SAT": "SAB",
+        "Sun": "Dom",
+        "Mon": "Lun",
+        "Tue": "Mrt", // To prevent conflict with Marso (Mar)
+        "Wed": "Mir", // Abbrev. from pronounciation
+        "Thu": "Hue", // Abbrev. from pronounciation
+        "Fri": "Bir", // Abbrev. from pronounciation
+        "Sat": "Sab",
         "January": "Enero",
         "February": "Pebrero",
         "March": "Marso",
@@ -39,6 +47,22 @@ QtObject {
         "October": "Oktubre",
         "November": "Nobyembre",
         "December": "Disyembre",
+        "JAN": "ENR", // Abbrev. from pronounciation
+        "FEB": "PEB",
+        "MAR": "MAR",
+        "APR": "ABR",
+        "MAY": "MAY",
+        "JUN": "HUN",
+        "JUL": "HUL",
+        "AUG": "AGO",
+        "SEP": "SET",
+        "OCT": "OKT",
+        "NOV": "NOB",
+        "DEC": "DIS",
+        "Dawn": "Kadlawon",
+        "Noon": "Udto",
+        "Dusk": "Kilumkilum",
+        "Dark": "Kagabhion",
 
         // MediaPlayer.qml
         "No title": "Walay ulohan",
