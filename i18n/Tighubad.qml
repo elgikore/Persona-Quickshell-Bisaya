@@ -67,8 +67,6 @@ QtObject {
         // MediaPlayer.qml
         "No title": "Walay ulohan",
         "No Media": "Walay Sulod", // Implied meaning of "No media" is "No content"
-        "skip_previous": "balika",
-        "skip_next": "sunod",
 
         // Options / OptionsList.qml
         "LEADER": "ULO", 

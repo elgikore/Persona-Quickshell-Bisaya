@@ -106,13 +106,14 @@ Scope {
                             Item {
                                 anchors.left: parent.left
                                 anchors.verticalCenter: parent.verticalCenter
+                                anchors.verticalCenterOffset: -5
                                 width: 30
                                 height: 30
 
                                 Text {
                                     id: prevIcon
                                     anchors.centerIn: parent
-                                    text: Tighubad.pulong["skip_previous"]
+                                    text: "skip_previous"
                                     font.family: "Material Symbols Rounded"
                                     font.pixelSize: 30
                                     color: prevMouse.containsMouse ? Dat.Colors.color3 : Dat.Colors.color15
@@ -196,13 +197,14 @@ Scope {
                             Item {
                                 anchors.right: parent.right
                                 anchors.verticalCenter: parent.verticalCenter
+                                anchors.verticalCenterOffset: -5
                                 width: 30
                                 height: 30
 
                                 Text {
                                     id: nextIcon
                                     anchors.centerIn: parent
-                                    text: Tighubad.pulong["skip_next"]
+                                    text: "skip_next"
                                     font.family: "Material Symbols Rounded"
                                     font.pixelSize: 30
                                     color: nextMouse.containsMouse ? Dat.Colors.color3 : Dat.Colors.color15
