@@ -335,32 +335,35 @@ Item {
                 }
             }
 
-            Row {
+            Text {
+                id: filterLabel
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: parent.left
+                anchors.verticalCenterOffset: 0.9 // To match NASIRA/NAABLI
                 anchors.leftMargin: 25
-                anchors.right: parent.right
-                anchors.rightMargin: 28
-                spacing: 12
+                width: Math.min(implicitWidth, parent.width - 25 - 28 - statusText.implicitWidth - 12)
+                text: revealRoot.revealContent[revealRoot.localTab].lower
+                font.family: montserrat.name
+                font.pixelSize: 18
+                color: "white"
+                wrapMode: Text.Wrap
+                horizontalAlignment: Text.AlignLeft
+                verticalAlignment: Text.AlignVCenter
+            }
 
-                Text {
-                    text: revealRoot.revealContent[revealRoot.localTab].lower
-                    font.family: montserrat.name
-                    font.pixelSize: 18
-                    color: "white"
-                    wrapMode: Text.Wrap
-                    horizontalAlignment: Text.AlignLeft
-                }
-
-                Text {
-                    text: revealRoot.activeShaderIndex === revealRoot.localTab ? "● " + Tighubad.pulong["ON"] : "○ " + Tighubad.pulong["OFF"]
-                    font.family: bebasNeue.name
-                    font.pixelSize: 18
-                    color: revealRoot.activeShaderIndex === revealRoot.localTab ? "#4a8fff" : "#66ffffff"
-                    Behavior on color {
-                        ColorAnimation {
-                            duration: 150
-                        }
+            Text {
+                id: statusText
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: filterLabel.right
+                anchors.leftMargin: 10
+                text: revealRoot.activeShaderIndex === revealRoot.localTab ? "● " + Tighubad.pulong["ON"] : "○ " + Tighubad.pulong["OFF"]
+                font.family: bebasNeue.name
+                font.pixelSize: 18
+                color: revealRoot.activeShaderIndex === revealRoot.localTab ? "#4a8fff" : "#66ffffff"
+                verticalAlignment: Text.AlignVCenter
+                Behavior on color {
+                    ColorAnimation {
+                        duration: 150
                     }
                 }
             }
